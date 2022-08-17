@@ -1,0 +1,26 @@
+version: 0.2
+
+env:
+  variables:
+    NODE_ENV: "Testing"
+
+phases:
+  install:
+    commands:
+      - echo Installing dependency...
+      - apt-get update -y
+      - npm install -g next
+      - npm install -g typescript
+      - npm install
+       finally:
+      - echo This always runs even if the update or install command fails 
+      
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - npm run build
+    finally:
+      - echo This always runs even if the update or build command fails   
+  
