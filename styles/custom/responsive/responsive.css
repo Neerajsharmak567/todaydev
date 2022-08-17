@@ -1,0 +1,40 @@
+@media (max-width: 599px) {
+  .MuiTablePagination-selectLabel {
+    display: none;
+  }
+
+  .calendar-wrapper .calendar-container {
+    width: 430px;
+    overflow: scroll;
+  }
+
+  .react-calendar {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 819px) {
+  .calendar-desc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calendar-wrapper .details {
+    padding: 0;
+    min-width: 190px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 567px) {
+  .calendar-wrapper .calendar-container .react-calendar .react-calendar__month-view__days__day {
+    padding: 10px;
+  }
+
+  @media (max-width: 400px) {
+    .cancel-button {
+      display: block !important;
+      top: 10px;
+    }
+  }
+}

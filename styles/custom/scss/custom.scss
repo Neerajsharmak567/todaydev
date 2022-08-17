@@ -1,0 +1,251 @@
+// ** Logo
+.logo {
+  max-width: 76px;
+}
+
+// ** Vertical link
+.nav-link a {
+  padding-bottom: 11px;
+}
+
+// ** Links
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// ** Dashboard
+
+.overviewIcon {
+  width: 46px;
+  height: 46px;
+
+  [data-testid="RotateLeftIcon"] {
+    font-size: 1.6rem !important;
+  }
+  [data-testid="AlarmOffIcon"] {
+    font-size: 1.39rem !important;
+  }
+}
+
+.full-width {
+  .MuiFormControl-root {
+    width: 100%;
+  }
+}
+
+// ** View project
+
+.card-header {
+  .MuiGrid-container .MuiGrid-item:nth-child(2) {
+    text-align: right !important;
+  }
+}
+
+// ** Upload file
+
+.upload-btn {
+  padding: 10px 16px 30px;
+}
+
+.link-style a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// ** custom accordion table // Tasks
+
+.accordion-table {
+  td.MuiTableCell-root {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  td.acc-container {
+    padding: 0 !important;
+  }
+  .MuiTableCell-head {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      border-left: 2px solid #e0e0e5;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  .MuiTableCell-head:nth-child(1)::before {
+    border: none;
+  }
+
+  .indent-body {
+    position: relative;
+
+    & tbody tr td:first-child {
+      padding-left: 2.5rem !important;
+    }
+  }
+
+  .indent-body.indent tbody tr td:first-child {
+    padding-left: 3.5rem !important;
+  }
+  .indent-body.indent tbody tr td:last-child {
+    padding-left: 3.5rem !important;
+  }
+
+  .indent-body tbody tr td {
+    min-width: 200px;
+  }
+
+  .indent-body tbody tr td:first-child {
+    min-width: 100px;
+  }
+
+  .indent-body tbody tr td:last-child {
+    min-width: 270px;
+    width: 270px;
+  }
+
+  .indent-body tbody tr:first-child td {
+    border-top: none;
+  }
+}
+
+// ** Radio-field
+
+.radio-label {
+  display: flex;
+
+  .MuiFormGroup-root {
+    flex-direction: column;
+  }
+
+  .MuiFormControlLabel-label {
+    font-size: 15px;
+  }
+}
+
+// ** input-field
+
+.calendar-width {
+  .MuiTextField-root {
+    width: 100% !important;
+  }
+}
+
+// ** Custom padding
+
+.c-padding {
+  padding-top: 15px !important;
+}
+
+// ** React calendar
+
+.calendar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .calendar-container {
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+
+    .react-calendar {
+      width: 100% !important;
+      border: none;
+      background: transparent;
+
+      .react-calendar__navigation {
+        height: auto;
+        padding: 5px;
+
+        .react-calendar__navigation__arrow {
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 50%;
+          margin: 0 5px;
+          box-shadow: 0 0 30px rgba($color: #9e9e9e, $alpha: 0.1);
+        }
+      }
+
+      .react-calendar__month-view__days__day {
+        padding: 20px 10px;
+      }
+    }
+
+    .react-calendar__month-view__weekdays__weekday abbr {
+      text-decoration: none;
+    }
+  }
+
+  .details {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .color-des {
+      width: 30px;
+      height: 30px;
+      border-radius: 0px;
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  }
+}
+
+// ** View task -  Attachment link
+
+.attachment-link {
+  display: block !important;
+  a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: inherit;
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 16px;
+    }
+  }
+}
+
+// ** Full calendar
+
+/*
+.work-time-calendar {
+  overflow: hidden;
+  border-radius: 10px;
+
+  .MuiBox-root {
+    padding-bottom: 0;
+  }
+
+  .fc-today-button {
+    text-transform: capitalize !important;
+  }
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+*/
+
+// ** Calendar
+
+.app-calendar {
+  .MuiBox-root {
+    padding-bottom: 0;
+  }
+}
